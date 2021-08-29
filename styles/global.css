@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html {
+  --black: #0d114f;
+  --white: #fafafa;
+  --red: #e83f5b;
+  --ligth-blue: #e0ecff;
+  --blue: #3485ff;
+  --backgroud: #fbfcff;
+  --overlay: 040911;
+  --icons-details: #a5b0;
+
+  --grey-dark: #4d5e77;
+  --grey-blue: #a1b2cd;
+  --grey-ligth: #e5eaf1;
+
+  /* 1rem = 16px (User Agent) = 100% (User Agent) */
+  font-size: 62.5%; /* 10px */
+}
+
+body {
+  height: 100vh;
+  background: var(--backgroud);
+}
+
+/* body,
+button,
+input,
+textarea {
+} */
