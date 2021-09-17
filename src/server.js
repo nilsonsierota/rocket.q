@@ -13,6 +13,9 @@ server.use(express.static("public"))
 // pega a pasta views que ira conter os arquivos .ejs das paginas
 server.set('views', path.join(__dirname, 'views'))
 
+// middle
+server.use(express.urlencoded({ extended: true }))
+
 // usa o arquivo route com as rotas
 server.use(route)
 

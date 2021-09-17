@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="styles/global.css">
-    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="/styles/global.css">
+    <link rel="stylesheet" href="/styles/home.css">
 
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +19,7 @@
 
     <div id="home" class="content">
       <header>
-        <img src="images/logo.svg" alt="Logo da Rocket.q" />
+          <img src="/images/logo.svg" alt="Logo da Rocket.q" />
       </header>
 
       <div id="bg">
@@ -29,33 +29,8 @@
 
       <main>
         <div class="container">
-          
-          <section>
-            <h2>Entre como participante</h2>
-            <form action="">
-              <label class="sr-only" for="room-id">Código da Sala</label>
-              <input type="number" id="room-id" placeholder="Código da Sala">
-              <button>
-                <img src="images/enter-room.svg" alt="Imagem do botão enter room">
-                Entrar na Sala
-              </button>            
-            </form>         
-          </section>
-
-          <div class="separator">
-            <div></div>
-            <div>ou</div>
-            <div></div>
-          </div>
-
-          <section>
-            <h2>Crie sua própria sala de forma fácil</h2>
-            <a href="create-room.html" class="button outlined">
-              <img src="images/users.svg" alt="Imagem do botão criar sala"> 
-              Criar Sala
-            </a>
-          </section>
-
+          <!-- vai renderizar a parte correta de acordo com a URL -->
+          <%- include(`parts/${page}`) %>
         </div>
       </main>
     </div>
